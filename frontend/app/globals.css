@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42; /* slate-900 */
+  --background-start-rgb: 248, 250, 252; /* slate-50 */
+  --background-end-rgb: 255, 255, 255; /* white */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 248, 250, 252; /* slate-50 */
+    --background-start-rgb: 15, 23, 42; /* slate-900 */
+    --background-end-rgb: 30, 41, 59; /* slate-800 */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(241, 245, 249); /* slate-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(148, 163, 184); /* slate-400 */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 116, 139); /* slate-500 */
+}
+
+/* Focus styles for better accessibility */
+:focus-visible {
+  outline: 2px solid rgb(59, 130, 246); /* blue-500 */
+  outline-offset: 2px;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

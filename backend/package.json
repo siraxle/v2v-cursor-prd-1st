@@ -1,0 +1,29 @@
+{
+  "name": "sales-ai-backend",
+  "version": "0.1.0",
+  "description": "Backend functions for B2B SaaS Sales Training App with ElevenLabs AI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.6",
+    "axios": "^1.6.7",
+    "dotenv": "^16.3.1",
+    "openai": "^4.28.4",
+    "stripe": "^14.17.0",
+    "resend": "^3.1.0",
+    "zod": "^3.22.4",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.3.3",
+    "vercel": "^33.5.1"
+  }
+}
